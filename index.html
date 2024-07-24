@@ -1,0 +1,70 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> How To Make a Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container" id="bike">
+    <nav>
+        <!--Img of the logo-->
+        <img src="images/logo.png" class="logo" />
+        <!--test drive btn-->
+        <a href="#" class="btn">Test Drive</a>
+    </nav>
+
+
+    <!--start of the contect class-->
+    <div class="content">
+        <!--Header @-->
+        <h2>The BMW </h2>
+        <br />
+        <!--header 1-->
+        <h1>G 310 R </h1>
+        <!--Start of the paragraph-->
+        <p>
+            The strength of the G 310 R is in its lightness and agliity.
+            the Bike not only delivers fun in the big-city tumult, 
+            but also when you are redefining the city limits when 
+            <br />changing corners quickly.
+        </p>
+        <!--header 3-->
+        <h3>Choose your Colour </h3>
+
+        <!--class for the 3 diffrent colour btns-->
+        <div class="colour-select">
+            <div id="red"></div>
+            <div id="blue"></div>
+            <div id="black"></div>
+        </div>
+    <!--end of the content class-->
+    </div>
+
+</div>
+
+<!--Script for the changing the images of the bike when the diffrent colours are chosen-->
+<script>
+    let redBtn = document.getElementById("red");
+    let blueBtn = document.getElementById("blue")
+    let blackBtn = document.getElementById("black")
+    let bike = document.getElementById("bike")
+
+    /*funtion for the red button*/ 
+    redBtn.onclick = function () {
+        bike.style.backgroundImage = "url(images/BMW1.png)";
+    }
+
+    /*funtion for the blue button*/
+    blueBtn.onclick = function () {
+        bike.style.backgroundImage = "url(images/BMW2.png)";
+    }
+
+    /*funtion for the balck button*/
+    blackBtn.onclick = function () {
+        bike.style.backgroundImage = "url(images/BMW3.png)";
+    }
+
+</script>
+
+</body>
+</html>
